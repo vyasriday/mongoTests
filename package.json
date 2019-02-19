@@ -1,0 +1,16 @@
+{
+  "name": "mongoapp",
+  "version": "1.0.0",
+  "description": "Basic introduction to mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon --exec 'mocha -R min' "
+  },
+  "author": "Hridayesh Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^5.2.0",
+    "mongoose": "^5.4.13",
+    "nodemon": "^1.18.10"
+  }
+}
