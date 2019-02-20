@@ -1,5 +1,4 @@
 const User = require('../src/user');
-const mongoose = require('mongoose');
 const assert = require('assert'); // available in mocha
 
 describe('Creating Records', () => {

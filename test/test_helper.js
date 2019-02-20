@@ -1,5 +1,15 @@
 const mongoose = require('mongoose');
 const User = require('../src/user');
+const assert = require('assert');
+
+module.exports = function assertFunction(operation, callback) {
+    operation
+        .then(() => User.findOne({name: 'Hridayesh'}))
+        .then((user) => {
+            assert(user.name === 'Hridayesh')
+            callback();
+        })
+}
 
 before((done) => {
 
